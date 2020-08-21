@@ -1,0 +1,462 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+a:hover {
+  opacity: 0.5; }
+
+li {
+  list-style-type: none; }
+
+p,
+a,
+h2,
+h3 {
+  color: #4B4B4B; }
+
+#masthead {
+  padding: 15px;
+  width: 100%;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.5s; }
+  @media screen and (min-width: 768px) {
+    #masthead {
+      padding: 0; } }
+  #masthead.scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    box-shadow: 0px 2px 2px #ccc; }
+
+header {
+  width: 100%;
+  display: flex;
+  z-index: 10;
+  position: absolute;
+  top: 0; }
+  header .left-box-top {
+    width: 40%;
+    padding: 3%; }
+    @media screen and (min-width: 768px) {
+      header .left-box-top {
+        padding: 1%; } }
+    header .left-box-top h1 {
+      width: 100%;
+      margin-top: -3%; }
+      @media screen and (min-width: 768px) {
+        header .left-box-top h1 {
+          width: 50%;
+          margin-top: 0; } }
+      header .left-box-top h1 img {
+        width: 100%; }
+    header .left-box-top p {
+      display: none; }
+      @media screen and (min-width: 768px) {
+        header .left-box-top p {
+          display: block;
+          font-size: 1em; } }
+
+.right-box-top {
+  width: 60%;
+  display: flex; }
+  .right-box-top .tel {
+    width: 75%;
+    padding: 7%; }
+    @media screen and (min-width: 768px) {
+      .right-box-top .tel {
+        width: 40%;
+        margin-left: auto;
+        padding: 2.5% 0 0 0; } }
+    .right-box-top .tel p {
+      display: none; }
+      @media screen and (min-width: 768px) {
+        .right-box-top .tel p {
+          display: block;
+          font-size: 1em;
+          text-align: center;
+          color: #4B4B4B; }
+          .right-box-top .tel p:first-child {
+            color: #9D3840; } }
+    .right-box-top .tel a {
+      width: 100%;
+      display: block;
+      color: #4B4B4B; }
+      @media screen and (min-width: 768px) {
+        .right-box-top .tel a {
+          font-size: 2em;
+          display: flex; } }
+      .right-box-top .tel a span {
+        display: none; }
+        @media screen and (min-width: 768px) {
+          .right-box-top .tel a span {
+            display: block;
+            font-size: 0.8em;
+            margin: 0 auto; } }
+      .right-box-top .tel a i {
+        font-size: 2em; }
+        @media screen and (min-width: 768px) {
+          .right-box-top .tel a i {
+            display: none; } }
+  .right-box-top .hamburger-menu {
+    width: 25%;
+    background-color: #91883C; }
+    @media screen and (min-width: 768px) {
+      .right-box-top .hamburger-menu {
+        width: 15%; } }
+    .right-box-top .hamburger-menu div {
+      width: 70%;
+      margin: 20% auto 0; }
+      .right-box-top .hamburger-menu div img {
+        width: 100%;
+        object-fit: cover;
+        color: #fff; }
+  .right-box-top .menu {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    line-height: 2;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 100; }
+    @media screen and (min-width: 768px) {
+      .right-box-top .menu {
+        width: 30%; } }
+    .right-box-top .menu .inmenu {
+      display: none; }
+      .right-box-top .menu .inmenu li {
+        list-style: none; }
+        .right-box-top .menu .inmenu li a {
+          font-size: fontsizeM;
+          display: block;
+          text-align: center;
+          padding: 2%;
+          box-sizing: border-box;
+          text-decoration: none;
+          background-color: #fff;
+          margin: 2%;
+          color: #000; }
+          @media screen and (min-width: 768px) {
+            .right-box-top .menu .inmenu li a {
+              background-color: transparent; } }
+
+.background-image-box {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../imgs/sapporo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+.top-text-box {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0; }
+  .top-text-box p {
+    z-index: 5;
+    color: #fff;
+    font-family: serif;
+    font-size: 1.2em;
+    line-height: 2;
+    letter-spacing: 0.1em;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .top-text-box p {
+        font-size: 1.6em; } }
+    .top-text-box p:first-child {
+      padding-top: 50%; }
+      @media screen and (min-width: 768px) {
+        .top-text-box p:first-child {
+          padding-top: 20%; } }
+
+.question-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  z-index: 11;
+  box-shadow: 3px 3px 3px #999;
+  background-color: #91883C; }
+  @media screen and (min-width: 768px) {
+    .question-button {
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+      bottom: 12%; } }
+  .question-button p {
+    text-align: center;
+    line-height: 2.5;
+    color: #fff;
+    font-size: 1.2em; }
+    .question-button p a {
+      display: block;
+      color: #fff; }
+      .question-button p a:hover .question-hover-message {
+        display: block; }
+    @media screen and (min-width: 768px) {
+      .question-button p {
+        font-size: 1.6em;
+        line-height: 3; } }
+
+.question-hover-message {
+  width: 120px;
+  background-color: #fff;
+  border-radius: 8px;
+  position: fixed;
+  right: 8%;
+  bottom: 20%;
+  z-index: 15;
+  display: none; }
+  .question-hover-message p {
+    text-align: center;
+    line-height: 3; }
+
+.position-start {
+  position: absolute;
+  top: 70vh;
+  z-index: 5; }
+  @media screen and (min-width: 768px) {
+    .position-start {
+      top: 90vh; } }
+  .position-start main .start .common-background-beige {
+    background-color: #F0EAD5;
+    width: 100%;
+    padding-bottom: 20%; }
+    @media screen and (min-width: 768px) {
+      .position-start main .start .common-background-beige {
+        padding-bottom: 10%; } }
+    .position-start main .start .common-background-beige .service-fujiwara {
+      width: 90%;
+      display: flex;
+      margin: 0 auto; }
+      @media screen and (min-width: 768px) {
+        .position-start main .start .common-background-beige .service-fujiwara {
+          width: 70%; } }
+      .position-start main .start .common-background-beige .service-fujiwara div {
+        width: 33%;
+        margin: -10% auto 0; }
+        @media screen and (min-width: 768px) {
+          .position-start main .start .common-background-beige .service-fujiwara div {
+            width: 30%; } }
+        .position-start main .start .common-background-beige .service-fujiwara div img {
+          width: 100%; }
+    .position-start main .start .common-background-beige .faq-list {
+      width: 90%;
+      margin: 8% auto 0;
+      background-image: url(../imgs/black-bord.jpg);
+      background-size: cover;
+      padding: 2em; }
+      .position-start main .start .common-background-beige .faq-list h2 {
+        font-size: 1.2em;
+        color: #fff;
+        font-family: fot-tsukuardgothic-std, sans-serif;
+        text-align: center;
+        margin-bottom: 10%; }
+        .position-start main .start .common-background-beige .faq-list h2 span {
+          border-bottom: 10px solid #E69B9B; }
+        @media screen and (min-width: 768px) {
+          .position-start main .start .common-background-beige .faq-list h2 {
+            font-size: 1.6em; } }
+      .position-start main .start .common-background-beige .faq-list div {
+        width: 90%;
+        display: flex;
+        margin: 0 auto; }
+        .position-start main .start .common-background-beige .faq-list div p {
+          color: #fff;
+          font-family: fot-tsukuardgothic-std, sans-serif;
+          font-size: 1.2em;
+          font-weight: bold;
+          line-height: 4;
+          margin: 0 auto; }
+          @media screen and (min-width: 768px) {
+            .position-start main .start .common-background-beige .faq-list div p {
+              font-size: 1.6em; } }
+          .position-start main .start .common-background-beige .faq-list div p span {
+            border-bottom: 10px solid #E69B9B; }
+          .position-start main .start .common-background-beige .faq-list div p a {
+            color: #fff;
+            font-size: 0.5em;
+            font-weight: normal;
+            font-family: sans-serif; }
+    .position-start main .start .common-background-beige .morefaq-button {
+      background-color: #91883C;
+      width: 50%;
+      border-radius: 3px;
+      box-shadow: 0 5px 0px rgba(33, 34, 2, 0.8);
+      margin: 8% auto 0; }
+      @media screen and (min-width: 768px) {
+        .position-start main .start .common-background-beige .morefaq-button {
+          width: 30%; } }
+      .position-start main .start .common-background-beige .morefaq-button p {
+        color: #fff;
+        line-height: 4;
+        text-align: center;
+        font-size: 0.8em; }
+        .position-start main .start .common-background-beige .morefaq-button p a {
+          color: #fff;
+          display: block; }
+          .position-start main .start .common-background-beige .morefaq-button p a:hover {
+            box-shadow: none; }
+        @media screen and (min-width: 768px) {
+          .position-start main .start .common-background-beige .morefaq-button p {
+            line-height: 6;
+            font-size: 1.2em; } }
+    .position-start main .start .common-background-beige .fujiwara-descriptions-wrap {
+      margin-top: 20%;
+      width: 100%; }
+      .position-start main .start .common-background-beige .fujiwara-descriptions-wrap h2 {
+        font-family: fot-tsukuardgothic-std, sans-serif;
+        text-align: center; }
+        @media screen and (min-width: 768px) {
+          .position-start main .start .common-background-beige .fujiwara-descriptions-wrap h2 {
+            font-size: 2em; } }
+      .position-start main .start .common-background-beige .fujiwara-descriptions-wrap > p {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 0.8em;
+        font-family: fot-tsukuardgothic-std, sans-serif; }
+        @media screen and (min-width: 768px) {
+          .position-start main .start .common-background-beige .fujiwara-descriptions-wrap > p {
+            font-size: 1.2em; } }
+      .position-start main .start .common-background-beige .fujiwara-descriptions-wrap .fujiwara-descriptions {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto; }
+        .position-start main .start .common-background-beige .fujiwara-descriptions-wrap .fujiwara-descriptions .description {
+          width: 45%;
+          background-color: #fff;
+          margin: 5% auto 0;
+          padding: 12% 3%; }
+          @media screen and (min-width: 768px) {
+            .position-start main .start .common-background-beige .fujiwara-descriptions-wrap .fujiwara-descriptions .description {
+              width: 23%;
+              padding: 8% 1%; } }
+          .position-start main .start .common-background-beige .fujiwara-descriptions-wrap .fujiwara-descriptions .description p {
+            font-family: fot-tsukuardgothic-std, sans-serif;
+            text-align: center;
+            font-size: 1.6em; }
+          .position-start main .start .common-background-beige .fujiwara-descriptions-wrap .fujiwara-descriptions .description .img-box {
+            width: 50%;
+            margin: 10% auto 0; }
+            @media screen and (min-width: 768px) {
+              .position-start main .start .common-background-beige .fujiwara-descriptions-wrap .fujiwara-descriptions .description .img-box {
+                width: 40%; } }
+            .position-start main .start .common-background-beige .fujiwara-descriptions-wrap .fujiwara-descriptions .description .img-box img {
+              width: 100%; }
+        .position-start main .start .common-background-beige .fujiwara-descriptions-wrap .fujiwara-descriptions .dismissal .img-box {
+          margin-top: 30%; }
+  .position-start main .start .common-background-white {
+    background-color: #fff;
+    padding: 20% 0; }
+    @media screen and (min-width: 768px) {
+      .position-start main .start .common-background-white {
+        display: flex;
+        padding: 4%; } }
+    .position-start main .start .common-background-white .lawyer {
+      width: 90%;
+      margin: 0 auto; }
+      .position-start main .start .common-background-white .lawyer div {
+        width: 50%;
+        margin: 0 auto; }
+        @media screen and (min-width: 768px) {
+          .position-start main .start .common-background-white .lawyer div {
+            margin-top: 20%; } }
+        .position-start main .start .common-background-white .lawyer div img {
+          width: 100%; }
+      .position-start main .start .common-background-white .lawyer p {
+        font-family: fot-tsukuardgothic-std, sans-serif;
+        text-align: center; }
+        .position-start main .start .common-background-white .lawyer p .first {
+          font-size: 1.6em; }
+        .position-start main .start .common-background-white .lawyer p .secound {
+          font-size: 0.5em; }
+    .position-start main .start .common-background-white .lawyer-textbox {
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 8%; }
+      .position-start main .start .common-background-white .lawyer-textbox div {
+        margin: 0 auto; }
+        .position-start main .start .common-background-white .lawyer-textbox div:last-child {
+          margin-top: 8%; }
+        .position-start main .start .common-background-white .lawyer-textbox div h3 {
+          text-align: center;
+          font-size: 1.2em;
+          line-height: 4; }
+        .position-start main .start .common-background-white .lawyer-textbox div p {
+          white-space: pre-wrap;
+          line-height: 2; }
+  .position-start footer {
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9); }
+    @media screen and (min-width: 768px) {
+      .position-start footer {
+        height: 50vh; } }
+    .position-start footer .footwrap {
+      width: 90%;
+      padding-top: 40%;
+      margin: 0 auto; }
+      @media screen and (min-width: 768px) {
+        .position-start footer .footwrap {
+          padding: 5% 2% 0 2%;
+          display: flex;
+          width: 40%; } }
+      .position-start footer .footwrap .img-box {
+        width: 20%;
+        margin: 0 auto; }
+        @media screen and (min-width: 768px) {
+          .position-start footer .footwrap .img-box {
+            width: 30%; } }
+        .position-start footer .footwrap .img-box img {
+          width: 100%; }
+      .position-start footer .footwrap .text-box {
+        width: 60%;
+        margin: 0 auto; }
+        .position-start footer .footwrap .text-box p {
+          font-family: fot-tsukuardgothic-std, sans-serif;
+          font-weight: bolder;
+          text-align: center; }
+          .position-start footer .footwrap .text-box p:first-child {
+            font-size: 1.6em; }
+        .position-start footer .footwrap .text-box div {
+          width: 100%;
+          margin: 0 auto; }
+    .position-start footer nav {
+      width: 100%;
+      margin: 0 auto; }
+      .position-start footer nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20%; }
+        @media screen and (min-width: 768px) {
+          .position-start footer nav ul {
+            margin: 5% 4% 0 4%; } }
+        .position-start footer nav ul li {
+          display: inline;
+          text-align: center;
+          margin: 0 auto; }
+          .position-start footer nav ul li a {
+            font-family: fot-tsukuardgothic-std, sans-serif;
+            text-align: center;
+            font-size: 1.2em; }
+            .position-start footer nav ul li a::after {
+              content: "/"; }
+
+/*# sourceMappingURL=style.css.map */
