@@ -236,7 +236,7 @@ header {
   .position-start main .start .common-background-beige {
     background-color: #F0EAD5;
     width: 100%;
-    padding-bottom: 20%; }
+    padding-bottom: 10%; }
     @media screen and (min-width: 768px) {
       .position-start main .start .common-background-beige {
         padding-bottom: 10%; } }
@@ -260,13 +260,16 @@ header {
       margin: 8% auto 0;
       background-image: url(../imgs/black-bord.jpg);
       background-size: cover;
-      padding: 2em; }
+      padding: 1%; }
+      @media screen and (min-width: 768px) {
+        .position-start main .start .common-background-beige .faq-list {
+          padding: 3% 1%; } }
       .position-start main .start .common-background-beige .faq-list h2 {
-        font-size: 1.2em;
+        font-size: 1em;
         color: #fff;
         font-family: fot-tsukuardgothic-std, sans-serif;
         text-align: center;
-        margin-bottom: 10%; }
+        margin-bottom: 5%; }
         .position-start main .start .common-background-beige .faq-list h2 span {
           border-bottom: 10px solid #E69B9B; }
         @media screen and (min-width: 768px) {
@@ -278,24 +281,41 @@ header {
         margin: 0 auto; }
         .position-start main .start .common-background-beige .faq-list div p {
           color: #fff;
-          font-family: fot-tsukuardgothic-std, sans-serif;
-          font-size: 1.2em;
-          font-weight: bold;
+          font-size: 1em;
           line-height: 4;
           margin: 0 auto; }
           @media screen and (min-width: 768px) {
             .position-start main .start .common-background-beige .faq-list div p {
-              font-size: 1.6em; } }
-          .position-start main .start .common-background-beige .faq-list div p span {
-            border-bottom: 10px solid #E69B9B; }
+              line-height: inherit; } }
+          .position-start main .start .common-background-beige .faq-list div p .under-bar {
+            border-bottom: 10px solid #E69B9B;
+            font-weight: bold;
+            font-family: fot-tsukuardgothic-std, sans-serif; }
+            @media screen and (min-width: 768px) {
+              .position-start main .start .common-background-beige .faq-list div p .under-bar {
+                font-size: 1.6em; } }
+          .position-start main .start .common-background-beige .faq-list div p .sp-none {
+            display: none; }
+            @media screen and (min-width: 768px) {
+              .position-start main .start .common-background-beige .faq-list div p .sp-none {
+                display: block;
+                font-family: sans-serif;
+                font-weight: normal;
+                font-size: 1.2em;
+                margin-top: 3%; } }
           .position-start main .start .common-background-beige .faq-list div p a {
-            color: #fff;
-            font-size: 0.5em;
-            font-weight: normal;
-            font-family: sans-serif; }
+            color: #fff; }
+            @media screen and (min-width: 768px) {
+              .position-start main .start .common-background-beige .faq-list div p a {
+                color: #fff;
+                font-size: 1em;
+                font-weight: normal;
+                font-family: sans-serif;
+                display: flex;
+                margin: 5% auto; } }
     .position-start main .start .common-background-beige .morefaq-button {
       background-color: #91883C;
-      width: 50%;
+      width: 90%;
       border-radius: 3px;
       box-shadow: 0 5px 0px rgba(33, 34, 2, 0.8);
       margin: 8% auto 0; }
@@ -317,7 +337,7 @@ header {
             line-height: 6;
             font-size: 1.2em; } }
     .position-start main .start .common-background-beige .fujiwara-descriptions-wrap {
-      margin-top: 20%;
+      margin-top: 10%;
       width: 100%; }
       .position-start main .start .common-background-beige .fujiwara-descriptions-wrap h2 {
         font-family: fot-tsukuardgothic-std, sans-serif;
@@ -334,7 +354,7 @@ header {
           .position-start main .start .common-background-beige .fujiwara-descriptions-wrap > p {
             font-size: 1.2em; } }
       .position-start main .start .common-background-beige .fujiwara-descriptions-wrap .fujiwara-descriptions {
-        width: 80%;
+        width: 90%;
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto; }
@@ -342,7 +362,7 @@ header {
           width: 45%;
           background-color: #fff;
           margin: 5% auto 0;
-          padding: 12% 3%; }
+          padding: 12% 1%; }
           @media screen and (min-width: 768px) {
             .position-start main .start .common-background-beige .fujiwara-descriptions-wrap .fujiwara-descriptions .description {
               width: 23%;
@@ -350,7 +370,10 @@ header {
           .position-start main .start .common-background-beige .fujiwara-descriptions-wrap .fujiwara-descriptions .description p {
             font-family: fot-tsukuardgothic-std, sans-serif;
             text-align: center;
-            font-size: 1.6em; }
+            font-size: 1em; }
+            @media screen and (min-width: 768px) {
+              .position-start main .start .common-background-beige .fujiwara-descriptions-wrap .fujiwara-descriptions .description p {
+                font-size: 1.2em; } }
           .position-start main .start .common-background-beige .fujiwara-descriptions-wrap .fujiwara-descriptions .description .img-box {
             width: 50%;
             margin: 10% auto 0; }
@@ -363,7 +386,7 @@ header {
           margin-top: 30%; }
   .position-start main .start .common-background-white {
     background-color: #fff;
-    padding: 20% 0; }
+    padding: 10% 0; }
     @media screen and (min-width: 768px) {
       .position-start main .start .common-background-white {
         display: flex;
@@ -383,9 +406,9 @@ header {
         font-family: fot-tsukuardgothic-std, sans-serif;
         text-align: center; }
         .position-start main .start .common-background-white .lawyer p .first {
-          font-size: 1.6em; }
+          font-size: 1.2em; }
         .position-start main .start .common-background-white .lawyer p .secound {
-          font-size: 0.5em; }
+          font-size: 1.6em; }
     .position-start main .start .common-background-white .lawyer-textbox {
       width: 90%;
       margin: 0 auto;
@@ -395,9 +418,9 @@ header {
         .position-start main .start .common-background-white .lawyer-textbox div:last-child {
           margin-top: 8%; }
         .position-start main .start .common-background-white .lawyer-textbox div h3 {
-          text-align: center;
-          font-size: 1.2em;
-          line-height: 4; }
+          text-align: left;
+          font-size: 1em;
+          margin: 5% 0; }
         .position-start main .start .common-background-white .lawyer-textbox div p {
           white-space: pre-wrap;
           line-height: 2; }
@@ -411,7 +434,7 @@ header {
         height: 50vh; } }
     .position-start footer .footwrap {
       width: 90%;
-      padding-top: 40%;
+      padding-top: 20%;
       margin: 0 auto; }
       @media screen and (min-width: 768px) {
         .position-start footer .footwrap {
@@ -449,14 +472,22 @@ header {
           .position-start footer nav ul {
             margin: 5% 4% 0 4%; } }
         .position-start footer nav ul li {
+          width: 49%;
           display: inline;
-          text-align: center;
-          margin: 0 auto; }
+          margin: 1% auto;
+          background-color: rgba(145, 136, 60, 0.5); }
+          @media screen and (min-width: 768px) {
+            .position-start footer nav ul li {
+              width: inherit;
+              background-color: transparent; } }
           .position-start footer nav ul li a {
             font-family: fot-tsukuardgothic-std, sans-serif;
-            text-align: center;
             font-size: 1.2em; }
-            .position-start footer nav ul li a::after {
-              content: "/"; }
+            @media screen and (min-width: 768px) {
+              .position-start footer nav ul li a {
+                text-align: center; } }
+            @media screen and (min-width: 768px) {
+              .position-start footer nav ul li a::after {
+                content: "/"; } }
 
 /*# sourceMappingURL=style.css.map */

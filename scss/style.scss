@@ -16,6 +16,7 @@ sans-serif;
 
 //カラーコード
 $main: #91883C;
+$main-opa: rgba(145,136,60,0.5);
 $top-foot: rgba(255, 255, 255, 0.9);
 $font-main: #4B4B4B;
 $under-b: #E69B9B;
@@ -355,7 +356,7 @@ header {
 			.common-background-beige {
 				background-color: $bg-color;
 				width: 100%;
-				padding-bottom: 20%;
+				padding-bottom: 10%;
 
 				@include mq() {
 					padding-bottom: 10%;
@@ -390,14 +391,18 @@ header {
 					margin: 8% auto 0;
 					background-image: url(../imgs/black-bord.jpg);
 					background-size: cover;
-					padding: 2em;
+					padding: 1%;
+					@include mq() {
+						padding: 3% 1%;
+					}
+					
 
 					h2 {
-						font-size: $fontsizeM;
+						font-size: 1em;
 						color: #fff;
 						@include font;
 						text-align: center;
-						margin-bottom: 10%;
+						margin-bottom: 5%;
 
 						span {
 							border-bottom: 10px solid $under-b;
@@ -416,25 +421,44 @@ header {
 
 						p {
 							color: #fff;
-							@include font;
-							font-size: $fontsizeM;
-							font-weight: bold;
+							font-size: 1em;
 							line-height: 4;
 							margin: 0 auto;
 
 							@include mq() {
-								font-size: $fontsizeML;
+								line-height: inherit;
 							}
 
-							span {
+							.under-bar {
 								border-bottom: 10px solid $under-b;
+								font-weight: bold;
+								@include font;
+								@include mq() {
+									font-size: $fontsizeML;
+								}
+							}
+							
+							.sp-none {
+								display: none;
+								@include mq() {
+									display: block;
+									font-family: sans-serif;
+									font-weight: normal;
+									font-size: $fontsizeM;
+									margin-top: 3%;
+								}
 							}
 
 							a {
 								color: #fff;
-								font-size: $fontsizeS;
-								font-weight: normal;
-								font-family: sans-serif;
+								@include mq() {
+									color: #fff;
+									font-size: 1em;
+									font-weight: normal;
+									font-family: sans-serif;
+									display: flex;
+									margin: 5% auto;
+								}
 							}
 						}
 					}
@@ -442,7 +466,7 @@ header {
 
 				.morefaq-button {
 					background-color: $main;
-					width: 50%;
+					width: 90%;
 					border-radius: 3px;
 					box-shadow: 0 5px 0px rgba(33, 34, 2, 0.8);
 					margin: 8% auto 0;
@@ -472,7 +496,7 @@ header {
 				}
 
 				.fujiwara-descriptions-wrap {
-					margin-top: 20%;
+					margin-top: 10%;
 					width: 100%;
 
 					h2 {
@@ -496,7 +520,7 @@ header {
 					}
 
 					.fujiwara-descriptions {
-						width: 80%;
+						width: 90%;
 						display: flex;
 						flex-wrap: wrap;
 						margin: 0 auto;
@@ -505,7 +529,7 @@ header {
 							width: 45%;
 							background-color: #fff;
 							margin: 5% auto 0;
-							padding: 12% 3%;
+							padding: 12% 1%;
 
 							@include mq() {
 								width: 23%;
@@ -515,7 +539,10 @@ header {
 							p {
 								@include font;
 								text-align: center;
-								font-size: $fontsizeML;
+								font-size: 1em;
+								@include mq() {
+									font-size: $fontsizeM;
+								}
 							}
 
 							.img-box {
@@ -543,7 +570,7 @@ header {
 
 			.common-background-white {
 				background-color: #fff;
-				padding: 20% 0;
+				padding: 10% 0;
 
 				@include mq() {
 					display: flex;
@@ -572,11 +599,11 @@ header {
 						text-align: center;
 
 						.first {
-							font-size: $fontsizeML;
+							font-size: $fontsizeM;
 						}
 
 						.secound {
-							font-size: $fontsizeS;
+							font-size: $fontsizeML;
 						}
 					}
 				}
@@ -588,15 +615,16 @@ header {
 
 					div {
 						margin: 0 auto;
+						
 
 						&:last-child {
 							margin-top: 8%;
 						}
 
 						h3 {
-							text-align: center;
-							font-size: $fontsizeM;
-							line-height: 4;
+							text-align: left;
+							font-size: 1em;
+							margin: 5% 0;
 						}
 
 						p {
@@ -621,7 +649,7 @@ header {
 
 		.footwrap {
 			width: 90%;
-			padding-top: 40%;
+			padding-top: 20%;
 			margin: 0 auto;
 
 			@include mq() {
@@ -678,17 +706,27 @@ header {
 				}
 
 				li {
+					width: 49%;
 					display: inline;
-					text-align: center;
-					margin: 0 auto;
+					margin: 1% auto;
+					background-color: $main-opa;
+					@include mq() {
+						width: inherit;
+						background-color: transparent;
+					}
 
 					a {
 						@include font;
-						text-align: center;
 						font-size: $fontsizeM;
+						@include mq() {
+							text-align: center;
+						}
 
 						&::after {
-							content: "/";
+							@include mq() {
+								content: "/";
+							}
+							
 						}
 					}
 				}
