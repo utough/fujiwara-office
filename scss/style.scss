@@ -649,11 +649,11 @@ header {
 
 		.footwrap {
 			width: 90%;
-			padding-top: 20%;
+			padding-top: 30%;
 			margin: 0 auto;
 
 			@include mq() {
-				padding: 5% 2% 0 2%;
+				padding: 4% 2% 0 2%;
 				display: flex;
 				width: 40%;
 			}
@@ -672,7 +672,7 @@ header {
 			}
 
 			.text-box {
-				width: 60%;
+				width: 70%;
 				margin: 0 auto;
 
 				p {
@@ -693,7 +693,7 @@ header {
 		}
 
 		nav {
-			width: 100%;
+			width: 90%;
 			margin: 0 auto;
 
 			ul {
@@ -717,7 +717,7 @@ header {
 
 					a {
 						@include font;
-						font-size: $fontsizeM;
+						font-size: 1em;
 						@include mq() {
 							text-align: center;
 						}
